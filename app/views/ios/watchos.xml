@@ -1,0 +1,13 @@
+<Alloy>
+	<Window title="WatchOS">
+		<ScrollView>
+			<View class="vbox">
+
+				<Label class="help">This sample app comes with a WatchOS Extension in Swift. The following properties show the status of the WatchSession:</Label>
+
+				<Label id="feedback" class="help tpad" />
+
+			</View>
+		</ScrollView>
+	</Window>
+</Alloy>

@@ -1,0 +1,13 @@
+<Alloy>
+	<Window title="Window">
+		<View class="vbox">
+
+			<Label class="help">Pasteboard APIs:</Label>
+
+			<Label id="feedback" class="help tpad" />
+
+
+		</View>
+		<Button bottom="10" onClick="doSetClipboard">Set Clipboard Text</Button>
+	</Window>
+</Alloy>

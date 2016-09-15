@@ -1,0 +1,49 @@
+'ItemTemplate': {
+	height: 50
+}
+
+'.item': {
+	height: 25
+}
+
+'.item[platform=ios]': {
+	left: 15
+}
+
+'.itemTitle': {
+	top: 0
+}
+
+'.itemSubtitle': {
+	top: 25,
+	color: 'gray'
+}
+
+'.ios[platform=!ios]': {
+	unsupported: true
+}
+
+'.tablet[formFactor=!tablet]': {
+	unsupported: true
+}
+
+'.android[platform=!android]': {
+	unsupported: true
+}
+
+'.forcetouch[if=!Alloy.Globals.isForceTouchSupported]': {
+	unsupported: true
+}
+
+'.watch[if=!Alloy.Globals.isWatchSupported]': {
+	unsupported: true
+}
+
+'.unsupported': {
+
+	// Add some margin left and right
+	left: 20,
+	right: 20,
+
+	textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER
+}

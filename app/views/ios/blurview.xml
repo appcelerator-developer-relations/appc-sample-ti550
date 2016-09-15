@@ -1,0 +1,19 @@
+<Alloy>
+	<Window title="Window">
+		<View class="vbox">
+			<TabbedBar width="Ti.UI.FILL" onClick="doBlur">
+				<Labels>
+					<Label>Extra Light</Label>
+					<Label>Extra</Label>
+					<Label>Dark</Label>
+					<Label>Regular</Label>
+					<Label>Prominent</Label>
+				</Labels>
+			</TabbedBar>
+			<Label class="help" top="20">Click an effect to apply it to the image view.</Label>
+			<ImageView top="20" image="https://s3.amazonaws.com/www.appcelerator.com.images/blog-572x320-hyperloop-announce.png" height="320" width="572">
+				<BlurView id="blurView" width="Ti.UI.FILL" height="Ti.UI.FILL"/>
+			</ImageView>
+		</View>
+	</Window>
+</Alloy>

@@ -1,0 +1,32 @@
+<Alloy>
+	<!-- For supported environments (see alloy.js) -->
+	<TabGroup>
+		<Tab id="samplesTab" title="Samples">
+			<Window title="Samples">
+				<ListView defaultItemTemplate="sample" onItemclick="onListViewItemclick">
+					<Templates>
+						<ItemTemplate name="sample">
+							<Label bindId="title" class="item itemTitle"/>
+							<Label bindId="subtitle" class="item itemSubtitle"/>
+						</ItemTemplate>
+					</Templates>
+					<ListSection>
+						<ListItem itemId="blurview" title:text="BlurView" subtitle:text="ios" class="ios"/>
+						<ListItem itemId="pasteboard" title:text="Paste Board APIs" subtitle:text="ios" class="ios"/>
+						<ListItem itemId="searchableitem" title:text="Searchable Item" subtitle:text="ios" class="ios"/>
+						<ListItem itemId="scrollview" title:text="ScrollView (Pull2Refresh)" subtitle:text="iOS" class="ios"/>
+						<ListItem itemId="watchos" title:text="WatchOS" subtitle:text="iOS, Watch" class="ios watch"/>
+					</ListSection>
+				</ListView>
+			</Window>
+		</Tab>
+		<Tab id="consoleTab" title="Console">
+			<Require src="console"/>
+		</Tab>
+	</TabGroup>
+
+	<!-- For unsupported environments -->
+	<Window if="!Alloy.Globals.isSupported">
+		<Label class="unsupported">This sample requires Titanium 5.2.</Label>
+	</Window>
+</Alloy>
