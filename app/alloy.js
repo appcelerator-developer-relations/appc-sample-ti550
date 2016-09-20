@@ -25,8 +25,8 @@ var log = require('log');
   // This variable would have been global without the above SEF
   var versions = Ti.version.split('.');
 
-  // Used in the index view and controller to check if the appw as build with Ti 5.2 or later
-  Alloy.Globals.isSupported = (parseInt(versions[0], 10) >= 5 && parseInt(versions[1], 10) >= 2);
+  // Used in the index view and controller to check if the appw as build with Ti 5.6 or later
+  Alloy.Globals.isSupported = (parseInt(versions[0], 10) >= 5 && parseInt(versions[1], 10) >= 5);
 
   // Used in index.tss to set flags for supported examples
   Alloy.Globals.isForceTouchSupported = (OS_IOS && Ti.UI.iOS.forceTouchSupported);

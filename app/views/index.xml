@@ -3,7 +3,7 @@
 	<TabGroup>
 		<Tab id="samplesTab" title="Samples">
 			<Window title="Samples">
-				<ListView defaultItemTemplate="sample" onItemclick="onListViewItemclick">
+				<ListView defaultItemTemplate="sample" onItemclick="onListViewItemclick" id="listView">
 					<Templates>
 						<ItemTemplate name="sample">
 							<Label bindId="title" class="item itemTitle"/>
@@ -11,11 +11,12 @@
 						</ItemTemplate>
 					</Templates>
 					<ListSection>
-						<ListItem itemId="blurview" title:text="iOS 10 BlurView" subtitle:text="New blurring-effects" class="ios"/>
-						<ListItem itemId="pasteboard" title:text="iOS 10 Pasteboard APIs" subtitle:text="New privacy-configuration" class="ios"/>
-						<ListItem itemId="searchableitem" title:text="iOS 10 Core Spotlight APIs" subtitle:text="New SearchQuery-API, new attributes" class="ios"/>
-						<ListItem itemId="scrollview" title:text="iOS ScrollView" subtitle:text="Native Pull-to-Refresh support" class="ios"/>
-						<ListItem itemId="watchos" title:text="watchOS 3" subtitle:text="New events and properties" class="Ti.WatchSession"/>
+						<ListItem itemId="blurview" title:text="iOS 10 BlurView" subtitle:text="New blurring-effects" class="ios" />
+						<ListItem itemId="pasteboard" title:text="iOS 10 Pasteboard APIs" subtitle:text="New privacy-configuration" class="ios" />
+						<ListItem itemId="searchableitem" title:text="iOS 10 Core Spotlight APIs" subtitle:text="New SearchQuery-API, new attributes" class="ios" />
+						<ListItem itemId="scrollview" title:text="iOS ScrollView" subtitle:text="Native Pull-to-Refresh support" class="ios" />
+						<ListItem itemId="watchos" title:text="watchOS 3" subtitle:text="New events and properties" class="ios,watchos" />
+						<ListItem itemId="hyperloop" title:text="Hyperloop" subtitle:text="Native API-access with JavaScript" class="ios" />
 					</ListSection>
 				</ListView>
 			</Window>
@@ -27,6 +28,14 @@
 
 	<!-- For unsupported environments -->
 	<Window if="!Alloy.Globals.isSupported">
-		<Label class="unsupported">This sample requires Titanium 5.2.</Label>
+		<Label class="unsupported">This sample requires Titanium 5.5.0+</Label>
 	</Window>
+	
+	<!-- For the case that the Hyperloop Samples are not installed -->
+	<AlertDialog id="noHyperloopSample" title="The Hyperloop Examples app is not installed!" message="You can download the Hyperloop Examples app on Github 🚀" onClick="handleHyperloopAlertClick">
+		<ButtonNames>
+			<ButtonName>OK</ButtonName>
+			<ButtonName>Take me to Github!</ButtonName>
+		</ButtonNames>
+	</AlertDialog>
 </Alloy>

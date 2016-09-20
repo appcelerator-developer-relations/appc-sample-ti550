@@ -38,15 +38,24 @@ function onListViewItemclick(e) {
     return alert('Your device does not meet the requirements for this example.');
   }
 
-  var controllerName = e.itemId;
-
-  // Special case. We want to list the Tab sample but it should select the middle tab.
-  if (controllerName === 'tab') {
-    $.index.tabs[1].active = true;
-    return;
+  if (e.itemId == "hyperloop") {
+      if (Ti.Platform.canOpenURL("hyperloop://")) {
+          Ti.Platform.openURL("hyperloop://");
+      } else {
+          $.noHyperloopSample.show();
+      }
+      
+      this.deselectItem(e.sectionIndex, e.itemIndex);
+      return;
   }
 
-  openSample(controllerName);
+  openSample(e.itemId);
+}
+
+function handleHyperloopAlertClick(e) {
+    if (e.index == 1) {
+        Ti.Platform.openURL(Alloy.CFG.hyperloopGithubURL);
+    }
 }
 
 function openSample(controllerName) {
