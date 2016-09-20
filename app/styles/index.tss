@@ -9,6 +9,10 @@
 	}
 }
 
+'#noHyperloopSample': {
+	cancel: 0
+}
+
 '.item': {
 	height: 25
 }
