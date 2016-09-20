@@ -6,6 +6,8 @@ var log = require('log'),
  * keep it organised, not to protect global scope like it would in alloy.js
  */
 (function constructor(args) {
+    
+    // List all properties that will be checked
     PROPS = [
         'isSupported', 
         'isPaired', 
@@ -15,12 +17,17 @@ var log = require('log'),
         'remainingComplicationUserInfoTransfers'
     ];
     
+    // Activate the watch-session if supported
     if (Ti.WatchSession.isSupported) {
         Ti.WatchSession.activateSession();
     }
 
-    // Show properties values
+    // Display the values of the properties
+    displayValues();
+})(arguments[0] || {});
+
+function displayValues() {
     $.feedback.text = PROPS.map(function(prop) {
         return 'Ti.WatchSession.' + prop + ':\n' + Ti.WatchSession[prop];
     }).join('\n\n');
-})(arguments[0] || {});
+}

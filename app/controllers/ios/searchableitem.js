@@ -19,9 +19,10 @@ var log = require('log');
         keywords: ['appcelerator', 'titanium_mobile', 'ios10', 'corespotlight']
     });
 
+    // Create a new searchable item that uses the previously created attribute set
     var item = Ti.App.iOS.createSearchableItem({
-        uniqueIdentifier: "titanium-tutorial",
-        domainIdentifier: "com.appcelerator",
+        uniqueIdentifier: "appc-sample-550-searchquery", // If you change this identifier, a new item will be added the next time you run it
+        domainIdentifier: "com.appcelerator", // Used for group-level content-sharing
         attributeSet: itemAttr
     });
 
@@ -32,7 +33,10 @@ var log = require('log');
         if (e.success) {
             log.args("Ti.App.iOS.SearchQuery:","Searchable item added to the Spotlight index. You can press the home button and now search for your keywords");
         } else {
-            alert("Errored: " + JSON.stringify(e.error));
+            Ti.UI.createAlertDialog({
+                title: "Error occurred", 
+                message: "Could not add to the searchable index: " + JSON.stringify(e.error)
+            }).show();
         }
     });
 })(arguments[0] || {});
@@ -53,7 +57,7 @@ function startSearch() {
 
     // The event to be called when a new batch of items is found
     searchQuery.addEventListener("founditems", function(e) {
-        log.args("Found new items:", JSON.stringify(e.items));
+        log.args("Found new items:", e.items);
         
         for (var i = 0; i < e.items.length; i++) {
             allItems.push(e.items[i]);

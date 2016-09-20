@@ -4,7 +4,7 @@
 			<TabbedBar onClick="doBlur">
 				<Labels>
 					<Label>Extra Light</Label>
-					<Label>Extra</Label>
+					<Label>Light</Label>
 					<Label>Dark</Label>
 					<Label>Regular</Label>
 					<Label>Prominent</Label>
