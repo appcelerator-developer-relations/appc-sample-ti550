@@ -12,7 +12,7 @@ var log = require('log');
 // accessible globally by attaching them to the `Alloy.Globals`
 // object. For example:
 //
-// Alloy.Globals.someGlobalFunction = function(){};
+// Alloy.Globals.someGlobalFunction = function() {};
 
 /**
  * It's a best practice to your code in alloy.js in a self-executing function

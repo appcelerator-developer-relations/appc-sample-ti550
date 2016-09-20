@@ -1,21 +1,10 @@
-# Titanium 5.2.0 Sample App
+# Titanium 5.5.0 Sample App
 
-> **NOTE:** This Sample App requires Titanium >=5.2.2<5.3 and Alloy >=1.8.5 (part of AppC CLI >=5.2.2). It supports Android 4.x and iOS 9.x. Some examples might be restricted to specific platforms or devices.
+> **NOTE:** This Sample App requires Titanium >= 5.5.0 and Alloy >= 1.9.0 (part of AppC CLI >=5.5.0). It demonstrates support iOS 10 and Xcode 8.
 
 ![screenshots](docs/assets/screenshots.png)
 
-For more information on Titanium 5.2.0 see the [official announcement](http://www.appcelerator.com/blog/2016/02/ga-release-of-cli-5-2-titanium-5-2-and-studio-4-5/), which also links the release notes and full list of closed tickets.
-
-## Walkthroughs
-
-The examples and code itself should be fairly self explanatory, but we've published detailed walkthroughs on some of the main features:
-
-* [Launch Files, iPad Pro, Slide Over and Split View](docs/launchfiles.md)
-* [Live Photos](docs/livephotos.md)
-* [Google Street View Panorama](docs/streetview.md)
-* [Android Activity & Shared Element Transitions](docs/transitions.md)
-* [Wrap-up for iOS](docs/ios.md)
-* [Wrap-up for Android](docs/android.md)
+For more information on Titanium 5.5.0 and Appcelerator Studio 4.7.1 see the [official announcement](https://www.appcelerator.com/blog/2016/09/ga-release-for-titanium-sdk-5-5-0-appcelerator-cli-5-5-0-appcelerator-studio-4-7-1/), which also links the release notes, new feature, improvements and bugfixes.
 
 ## Running the Sample
 

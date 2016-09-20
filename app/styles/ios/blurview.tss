@@ -1,4 +1,14 @@
+".banner": {
+    top: 20,
+    image: "/images/hyperloop-banner.png",
+    height: 320,
+    width: 572
+}
 
-".container" : {
-  
+".help": {
+    top: 20
+}
+
+"TabbedBar": {
+    width: Ti.UI.FILL
 }
