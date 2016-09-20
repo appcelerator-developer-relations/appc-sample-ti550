@@ -1,5 +1,7 @@
 <Alloy>
 	<Window title="Searchable Items">
-		<Button title="Add searchable index" onClick="addToSearchableIndex" />
+		<RightNavButton platform="ios" onClick="startSearch" title="Search" />
+		<ListView id="list" />
+		<Label id="placeholder" text="Click 'Search' to search items that match\nthe pattern '*iOS10*'" />
 	</Window>
 </Alloy>

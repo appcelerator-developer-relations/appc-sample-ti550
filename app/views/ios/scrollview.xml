@@ -2,7 +2,6 @@
 	<Window title="ScrollView">
 		<ScrollView id="scrollView" layout="vertical">
 			<Label class="help tpad">Pull to refresh!</Label>
-			<Label class="help" top="600">Nothing to see here.</Label>
 		</ScrollView>
 	</Window>
 </Alloy>

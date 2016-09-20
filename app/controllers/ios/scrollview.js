@@ -1,3 +1,4 @@
+var log = require("log");
 
 /**
  * We wrap code that executes on creation in a self-executing function just to
@@ -10,11 +11,16 @@
         tintColor: "red"
     });
 
+    // Add an event-listener to the refresh-control
     refreshControl.addEventListener("refreshstart", function() {    
+        log.args("Ti.UI.ScrollView: ", "Refreshing started!");
+
         setTimeout(function() {
             refreshControl.endRefreshing();
+            log.args("Ti.UI.ScrollView: ", "Refreshing finished!");
         },1000);
     })
 
+    // Set the refresh-control in the scroll-view
     $.scrollView.setRefreshControl(refreshControl);
 })(arguments[0] || {});
