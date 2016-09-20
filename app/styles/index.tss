@@ -45,10 +45,6 @@
 	unsupported: true
 }
 
-'.forcetouch[if=!Alloy.Globals.isForceTouchSupported]': {
-	unsupported: true
-}
-
 '.watch[if=!Alloy.Globals.isWatchSupported]': {
 	unsupported: true
 }

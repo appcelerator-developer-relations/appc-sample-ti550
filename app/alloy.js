@@ -29,7 +29,6 @@ var log = require('log');
   Alloy.Globals.isSupported = (parseInt(versions[0], 10) >= 5 && parseInt(versions[1], 10) >= 5);
 
   // Used in index.tss to set flags for supported examples
-  Alloy.Globals.isForceTouchSupported = (OS_IOS && Ti.UI.iOS.forceTouchSupported);
   Alloy.Globals.isWatchSupported = (OS_IOS && Ti.WatchSession.isSupported);
 
   if (OS_IOS) {
