@@ -1,4 +1,14 @@
+'#list': {
+    allowsSelection: false,
+    defaultItemTemplate: Ti.UI.LIST_ITEM_TEMPLATE_SUBTITLE,
+    style: Ti.UI.iOS.ListViewStyle.GROUPED,
+    rowHeight: 60
+}
 
-".container" : {
-  
+'#placeholder': {
+    color: "#aaa",
+    textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+    font: {
+        fontSize: 14
+    }
 }
