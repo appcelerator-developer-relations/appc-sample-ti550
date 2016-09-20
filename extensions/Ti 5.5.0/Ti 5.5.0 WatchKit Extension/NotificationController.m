@@ -18,7 +18,7 @@
 
 - (instancetype)init {
     self = [super init];
-    if (self){
+    if (self) {
         // Initialize variables here.
         // Configure interface objects here.
 
@@ -59,6 +59,3 @@
 */
 
 @end
-
-
-

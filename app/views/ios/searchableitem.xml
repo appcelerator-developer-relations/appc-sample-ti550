@@ -1,5 +1,5 @@
 <Alloy>
-	<Window title="Searchable Item">
-	
+	<Window title="Searchable Items">
+		<Button title="Add searchable index" onClick="addToSearchableIndex" />
 	</Window>
 </Alloy>

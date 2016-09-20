@@ -1,5 +1,12 @@
-'ItemTemplate': {
-	height: 50
+'ListItem': {
+	height: 50,
+	acccessoryType: Ti.UI.LIST_ACCESSORY_TYPE_DISCLOSURE
+}
+
+'ListView': {
+	listSeparatorInsets: {
+		left: 15
+	}
 }
 
 '.item': {
@@ -11,12 +18,15 @@
 }
 
 '.itemTitle': {
-	top: 0
+	top: 2
 }
 
 '.itemSubtitle': {
-	top: 25,
-	color: 'gray'
+	top: 22,
+	color: 'gray',
+	font: {
+		fontSize: 13
+	}
 }
 
 '.ios[platform=!ios]': {

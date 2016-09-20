@@ -1,28 +1,31 @@
-// Arguments passed into this controller can be accessed via the `$.args` object directly or:
-var args = $.args;
-var log = require('log');
+var log = require('log'),
+    PROPS;
 
-log.args("Has URLs:", Ti.UI.Clipboard.hasURLs());
-log.args("Has images:", Ti.UI.Clipboard.hasImages());
-log.args("Has colors:", Ti.UI.Clipboard.hasColors());
-log.args("Has text:", Ti.UI.Clipboard.hasText());
-console.log(Ti.UI.Clipboard.getText());
-
-var log = require('log');
-
-var PROPS = [{
-    name: 'hasURLs',
-    get: 'getURL'
-}, {
-    name: 'hasImages',
-    get: 'getImage'
-}, {
-    name: 'hasColors',
-    get: 'getColor'
-}, {
-    name: 'hasText',
-    get: 'getText'
-}];
+/**
+ * We wrap code that executes on creation in a self-executing function just to
+ * keep it organised, not to protect global scope like it would in alloy.js
+ */
+(function constructor(args) {
+    log.args("Has URLs:", Ti.UI.Clipboard.hasURLs());
+    log.args("Has images:", Ti.UI.Clipboard.hasImages());
+    log.args("Has colors:", Ti.UI.Clipboard.hasColors());
+    log.args("Has text:", Ti.UI.Clipboard.hasText());    
+    log.args("Current clipboard value: " + Ti.UI.Clipboard.getText());
+    
+    PROPS = [{
+        name: 'hasURLs',
+        get: 'getURL'
+    }, {
+        name: 'hasImages',
+        get: 'getImage'
+    }, {
+        name: 'hasColors',
+        get: 'getColor'
+    }, {
+        name: 'hasText',
+        get: 'getText'
+    }];
+})(arguments[0] || {});
 
 function refresh() {
     // Show properties values

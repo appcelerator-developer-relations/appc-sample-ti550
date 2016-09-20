@@ -11,11 +11,11 @@
 						</ItemTemplate>
 					</Templates>
 					<ListSection>
-						<ListItem itemId="blurview" title:text="BlurView" subtitle:text="ios" class="ios"/>
-						<ListItem itemId="pasteboard" title:text="Paste Board APIs" subtitle:text="ios" class="ios"/>
-						<ListItem itemId="searchableitem" title:text="Searchable Item" subtitle:text="ios" class="ios"/>
-						<ListItem itemId="scrollview" title:text="ScrollView (Pull2Refresh)" subtitle:text="iOS" class="ios"/>
-						<ListItem itemId="watchos" title:text="WatchOS" subtitle:text="iOS, Watch" class="ios watch"/>
+						<ListItem itemId="blurview" title:text="iOS 10 BlurView" subtitle:text="New blurring-effects" class="ios"/>
+						<ListItem itemId="pasteboard" title:text="iOS 10 Pasteboard APIs" subtitle:text="New privacy-configuration" class="ios"/>
+						<ListItem itemId="searchableitem" title:text="iOS 10 Core Spotlight APIs" subtitle:text="New SearchQuery-API, new attributes" class="ios"/>
+						<ListItem itemId="scrollview" title:text="iOS ScrollView" subtitle:text="Native Pull-to-Refresh support" class="ios"/>
+						<ListItem itemId="watchos" title:text="watchOS 3" subtitle:text="New events and properties" class="Ti.WatchSession"/>
 					</ListSection>
 				</ListView>
 			</Window>

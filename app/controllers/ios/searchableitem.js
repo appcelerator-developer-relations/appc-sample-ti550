@@ -1,15 +1,11 @@
-// Arguments passed into this controller can be accessed via the `$.args` object directly or:
-var args = $.args;
 
-var btn = Ti.UI.createButton({
-    title : "Add searchable index"
-});
+/**
+ * We wrap code that executes on creation in a self-executing function just to
+ * keep it organised, not to protect global scope like it would in alloy.js
+ */
+(function constructor(args) {
 
-btn.addEventListener("click", function() {
-    addToSearchableIndex();
-});
-
-$.getView().add(btn);
+})(arguments[0] || {});
 
 function addToSearchableIndex() {
     var itemAttr = Ti.App.iOS.createSearchableItemAttributeSet({
