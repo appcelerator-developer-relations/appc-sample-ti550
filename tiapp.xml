@@ -3,7 +3,7 @@
   xmlns:ti="http://ti.appcelerator.org">
   <id>com.appcelerator.sample.ti550</id>
   <name>Ti 5.5.0</name>
-  <version>1.0.0</version>
+  <version>1.0</version>
   <publisher>Appcelerator</publisher>
   <url>http://www.appcelerator.com</url>
   <description>This app demonstrates new features in Titanium 5.5.0</description>
