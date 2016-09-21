@@ -13,7 +13,7 @@
   <!-- Android: Set to true for the splash screen to take the full screen -->
   <fullscreen>true</fullscreen>
   <analytics>false</analytics>
-  <guid>90c46a4a-861f-4cd9-9ddd-b5f22e609479</guid>
+  <guid>00000000-0000-0000-0000-000000000000</guid>
   <property name="ti.ui.defaultunit" type="string">dp</property>
   <!--<property name="ti.version.range" type="string">&gt;=5.5.0 &lt;5.3</property>-->
   <ios>
@@ -106,22 +106,4 @@
     <plugin version="1.0">ti.alloy</plugin>
     <plugin version="1.0">ti.version</plugin>
   </plugins>
-  <property name="appc-app-id" type="string">57e158f7cd7a01bf43eef032</property>
-  <property name="acs-authbase-url-development" type="string">https://secure-identity.cloud.appcelerator.com</property>
-  <property name="acs-base-url-development" type="string">https://api.cloud.appcelerator.com</property>
-  <property name="acs-oauth-secret-development" type="string">DrHy9TEnE2B9qoJn3VsUuXnvLCaf9cH5</property>
-  <property name="acs-oauth-key-development" type="string">TPoob5Qz331L3uzSycBCFOGGcAd8tgca</property>
-  <property name="acs-api-key-development" type="string">CosoiQCiiJFHA9PA6tsmeOjZ1QpR0GPd</property>
-  <property name="acs-username-development" type="string">appc_app_user_dev</property>
-  <property name="acs-password-development" type="string">XHeEWu45gUD4kjyRxE</property>
-  <property name="acs-authbase-url-production" type="string">https://secure-identity.cloud.appcelerator.com</property>
-  <property name="acs-base-url-production" type="string">https://api.cloud.appcelerator.com</property>
-  <property name="acs-oauth-secret-production" type="string">ndOUnPAiKFkmNbbRr5ypHaFzfbztCOvM</property>
-  <property name="acs-oauth-key-production" type="string">Nmt53Rmj5ePu5NHzkPT6xenu8ma6vaHx</property>
-  <property name="acs-api-key-production" type="string">bXgM00MJ7OWt3IATv0V8UU84EmdRtK9y</property>
-  <property name="acs-username-production" type="string">appc_app_user</property>
-  <property name="acs-password-production" type="string">WEBZCX6QpFBzvCF6uX</property>
-  <property name="appc-org-id" type="string">100000208</property>
-  <property name="appc-creator-user-id" type="string">71ac885f-4db2-45b2-bbdc-c87235b11dc2</property>
-  <property name="com-appcelerator-apm-id" type="string">6a812952ba39476e968e4119b0ebd11600555300</property>
 </ti:app>
